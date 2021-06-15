@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
-public float mouseSensitivity = 100f;
+    /*public float mouseSensitivity = 100f;
     public Transform playerBody;
     private float xRotation = 0f;
-
+*/
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
     }
