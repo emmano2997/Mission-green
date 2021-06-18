@@ -6,11 +6,15 @@ public class PlayerController : MonoBehaviour
     /*public float mouseSensitivity = 100f;
     public Transform playerBody;
     private float xRotation = 0f;
+    
 */
+    public bool shoot = false;
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
     }
     void Update() {
+    
+        
         
     }
 }

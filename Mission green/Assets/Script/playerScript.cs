@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerScript : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 5f;
+    private float moveSpeed = 10f;
     [SerializeField]
     private float gravity = 9.81f;
     [SerializeField]
-    private float jumpSpeed = 3.5f;
+    private float jumpSpeed = 2.5f;
     [SerializeField]
-    private float doubleJumpMultiplier = 0.5f;
+    private float doubleJumpMultiplier = 1f;
 
     private CharacterController controller;
 
