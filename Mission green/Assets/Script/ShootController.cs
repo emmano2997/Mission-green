@@ -2,23 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Shooting : MonoBehaviour
 {
-    public Rigidbody bullet;
-    public Transform gun;
-    
-    /*void Start() {
-        GameObject.Destroy (gameObject, 5);
 
-    }*/
+    public int maxAmmo=8;
+    int currentAmmo;
+    public float reloadTime=0.2f;
+    bool isReloading = false;
+
+    [SerializeField] Transform firePoint;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] float bulletForce;
+
+   void Start(){
+       currentAmmo = maxAmmo;
+   }
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if(isReloading)
+        return;
+       
+        if(currentAmmo <=0){
+            StartCoroutine(Reload());
+            return;
+        }
+        if(Input.GetButtonDown("Fire1"))
         {
-            Rigidbody a = Rigidbody.Instantiate(bullet, gun.position, gun.rotation)
-            as Rigidbody;
+            Shoot();
+        }
+    }
 
-            a.AddForce(gun.forward * 1250);
+    void Shoot()
+    {
+        currentAmmo--;
+        GameObject Bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody rb = Bullet.GetComponent<Rigidbody>();
+        rb.AddForce(firePoint.right * bulletForce, ForceMode.Impulse);
+        Destroy(Bullet, 1.0f);
+    }
+    IEnumerator Reload(){
+        if(Input.GetKeyDown(KeyCode.Mouse1)){
+        isReloading=true;
+        Debug.Log("Reloading");
+        yield return new WaitForSeconds(reloadTime);
+        currentAmmo = maxAmmo;
+        isReloading = false;
         }
     }
 }

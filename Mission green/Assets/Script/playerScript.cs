@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public  int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
     [SerializeField]
     private float moveSpeed = 10f;
     [SerializeField]
@@ -11,24 +15,24 @@ public class PlayerScript : MonoBehaviour
     [SerializeField]
     private float jumpSpeed = 2.5f;
     [SerializeField]
-    private float doubleJumpMultiplier = 1f;
+    private float doubleJumpMultiplier = 1f; 
 
     private CharacterController controller;
 
     private float directionY;
 
     private bool canDoubleJump = false;
-
-    // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        currentHealth = maxHealth;
+		healthBar.SetMaxHealth(maxHealth);
+
+        Cursor.lockState = CursorLockMode.Locked; //mouse invisivel 
         controller = GetComponent<CharacterController>();
     }
-
-    // Update is called once per frame
     void Update()
     {
+        //move and jump script 
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -48,11 +52,19 @@ public class PlayerScript : MonoBehaviour
                 canDoubleJump = false;
             }
         }
-
         directionY -= gravity * Time.deltaTime;
-
         direction.y = directionY;
-
         controller.Move(direction * moveSpeed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+		{    
+			TakeDamage(20);
+		}
     }
+    //script damage
+    void TakeDamage(int damage)
+	{
+		currentHealth -= damage;
+		healthBar.SetHealth(currentHealth);
+	}
 }
