@@ -27,7 +27,7 @@ public class PlayerScript : MonoBehaviour
         currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
 
-        Cursor.lockState = CursorLockMode.Locked; //mouse invisivel 
+      //  Cursor.lockState = CursorLockMode.Locked; //mouse invisivel 
         controller = GetComponent<CharacterController>();
     }
     void Update()
