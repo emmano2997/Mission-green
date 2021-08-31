@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
         directionY -= gravity * Time.deltaTime;
         direction.y = directionY;
         controller.Move(direction * moveSpeed * Time.deltaTime);
-
+        //testador de barra de vida 
         if (Input.GetKeyDown(KeyCode.Space))
 		{    
 			TakeDamage(20);

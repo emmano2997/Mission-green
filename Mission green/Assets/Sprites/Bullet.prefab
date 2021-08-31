@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4151355470599962912}
   - component: {fileID: 1615851811442635134}
   - component: {fileID: 7025455123755678219}
-  - component: {fileID: 4735691848990159121}
+  - component: {fileID: 1947136419028861155}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -112,18 +112,17 @@ MonoBehaviour:
   aliveTime: 5
   demege: 10
   moveSpeed: 10
---- !u!114 &4735691848990159121
-MonoBehaviour:
+  bulletSpawn: {fileID: 0}
+--- !u!135 &1947136419028861155
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4749661162303554899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac7e94f0c0cb53941acb5792ccc06fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 4749661162303554899}
-  bulletSpaw: {fileID: 1725281951300195430, guid: 3a7a7b580f593974a8a14a78d453e27a, type: 3}
-  fireRate: 5
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Center: {x: 0, y: 0, z: 0}
