@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 84041783}
   - component: {fileID: 84041782}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageCreditos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 150249428}
   - component: {fileID: 150249427}
   m_Layer: 5
-  m_Name: "Programa\xE7\xE3o"
+  m_Name: "NamesPrograma\xE7\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,8 +232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -268, y: 90.035446}
-  m_SizeDelta: {x: 244.7886, y: 237.9291}
+  m_AnchoredPosition: {x: -300.06323, y: 79.5}
+  m_SizeDelta: {x: 309, y: 259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &150249427
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.02745098, g: 0.25882354, b: 0.011764706, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -257,8 +257,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
-    m_FontStyle: 0
+    m_FontSize: 25
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
@@ -268,8 +268,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Programa\xE7\xE3o time 8:\nAvalanche:\nDeyrlanne Vasconcelos; Emmanuel
-    Apr\xEDgio; Giovanna Pergentino; Gustavo Gabriel"
+  m_Text: "Programa\xE7\xE3o time 8\nAvalanche\nDeyrlanne Vasconcelos Emmanuel Apr\xEDgio
+    Giovanna Pergentino Gustavo Gabriel"
 --- !u!222 &150249428
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 951355948}
   - component: {fileID: 951355947}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonJogar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -456,14 +456,14 @@ RectTransform:
   m_GameObject: {fileID: 951355945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7868887, y: 1.7868887, z: 1.7868887}
   m_Children: []
   m_Father: {fileID: 1000296018}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -93.5}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951355947
@@ -782,7 +782,7 @@ GameObject:
   - component: {fileID: 1961657558}
   - component: {fileID: 1961657557}
   m_Layer: 5
-  m_Name: 'Multimidia '
+  m_Name: 'NamesMultimidia '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -804,8 +804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 263, y: 90.035446}
-  m_SizeDelta: {x: 217.7382, y: 237.9291}
+  m_AnchoredPosition: {x: 290.61484, y: 79.5}
+  m_SizeDelta: {x: 309, y: 259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1961657557
 MonoBehaviour:
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.027450982, g: 0.25882354, b: 0.011764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -829,19 +829,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
-    m_FontStyle: 0
+    m_FontSize: 25
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Multim\xEDdia time 9:\nAtrasados: \nMaria Eduarda Brown; Lucas Hor\xE1cio;
-    Geovanna Gizella;\r\nJadson Severino\r\n"
+  m_Text: "Multim\xEDdia time 9\nAtrasados\nGeovanna Gizella\nJadson Severino\r\nLucas
+    Hor\xE1cio \nMaria Eduarda Brown \n"
 --- !u!222 &1961657558
 CanvasRenderer:
   m_ObjectHideFlags: 0
