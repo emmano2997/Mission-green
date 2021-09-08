@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShootingControler : MonoBehaviour
 {
-    
     public GameObject bullet;
     public GameObject bulletSpaw;
     public float fireRate;
