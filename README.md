@@ -23,6 +23,9 @@ Pausar o jogo          [Esc]
 # REQUISITOS DE SISTEMA
 
 Requer um processador e sistema operacional de 64 bits
+
 SO: Windows 7
+
 Processador: Intel Core i3-2120 | AMD FX-4350
+
 Memória: 4 GB de RAM
