@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
     public HealthBar healthBar;
 
     [SerializeField]
-    private float moveSpeed = 10f;
+    private float moveSpeed = 7f;
     [SerializeField]
     private float gravity = 9.81f;
     [SerializeField]
@@ -61,7 +61,7 @@ public class PlayerScript : MonoBehaviour
 		{    
 			TakeDamage(20);
 		}*/
-    }   
+    }
     //script damage
     void TakeDamage(int damage)
 	{
