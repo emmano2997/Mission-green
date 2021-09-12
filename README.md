@@ -20,7 +20,7 @@ Habilidades
 
 Pausar o jogo          [Esc]
 
-#REQUISITOS DE SISTEMA
+# REQUISITOS DE SISTEMA
 
 Requer um processador e sistema operacional de 64 bits
 SO: Windows 7
